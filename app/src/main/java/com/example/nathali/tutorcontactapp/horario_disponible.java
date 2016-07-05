@@ -1,4 +1,6 @@
 package com.example.nathali.tutorcontactapp;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 import android.app.FragmentTransaction;
 import android.support.v4.app.FragmentManager;
@@ -27,10 +29,15 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
 
     private android.support.v4.app.FragmentTransaction fragmentTransaction;
     private FragmentManager fragmentManager;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horario_disponible);
+
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayout);
 
@@ -158,5 +165,6 @@ public class horario_disponible extends AppCompatActivity implements AdapterView
     public void onItemClick(AdapterView<?> parent, View view,int position,long id){
         loadSelection(position);
         drawerLayout.closeDrawer(navList);
+
     }
 }
