@@ -16,12 +16,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".PantallaPrincipalTutor" />
-        <activity android:name=".RegistroTutor"
+        <activity
+            android:name=".RegistroTutor"
             android:parentActivityName=".LoginTutor">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.nathali.tutorcontactapp.LoginTutor" />
         </activity>
+        <activity android:name=".horario_disponible" />
+
     </application>
 
 </manifest>

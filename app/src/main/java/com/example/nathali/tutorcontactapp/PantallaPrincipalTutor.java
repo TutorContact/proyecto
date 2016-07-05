@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class PantallaPrincipalTutor extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class PantallaPrincipalTutor extends AppCompatActivity {
         setContentView(R.layout.activity_pantalla_principal_tutor);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("TutorContact");
+        actionBar.setTitle("Menú Principal");
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -41,5 +42,10 @@ public class PantallaPrincipalTutor extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
 
+    }
+
+    public void horasDisponibles(View v) {
+        Intent intent = new Intent(context, horario_disponible.class);
+        startActivity(intent);
     }
 }
